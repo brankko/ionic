@@ -1,16 +1,148 @@
 <ion-view view-title="What we can do">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+    <ul class="list">
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+  <li class="item item-toggle">
+     Solar System
+     <label class="toggle toggle-assertive">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+
+
+
+
+<ul class="list">
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Mercury
+  </li>
+
+ <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Venus
+  </li>
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Earth
+  </li>
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Mars
+  </li>
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Jupiter
+  </li>
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Saturn
+  </li>
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Uranus
+  </li>
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Neptune
+  </li>
+
+</ul>
+
+<div class="list">
+  <div class="item range range-positive">
+    <i class="icon ion-minus-circled"></i>
+    <input type="range" name="volume" min="0" max="100" value="33">
+    <i class="icon ion-plus-circled"></i>
+  </div>
+</div>
+
+
+<div class="list">
+
+    <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=0wHYHMpHmSg">
+      <img src="img/borat.jpeg">
+      <h2>Pretty Hate Machine</h2>
+      <p>borat sagdiyev</p>
+    </a>
+
+</div>
+
+
+<div class="list">
+
+    <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=0wHYHMpHmSg">
+     <img src="img/azamat.jpg">
+      <h2>Pretty Hate Machine</h2>
+      <p>azamat bagatov</p>
+    </a>
+
+</div>
+
+
+
+<div class="list">
+
+    <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=0wHYHMpHmSg">
+      <img src="img/borat.jpeg">
+      <h2>Pretty Hate Machine</h2>
+      <p>borat sagdiyev</p>
+    </a>
+
+</div>
+
+
+<div class="list">
+
+    <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=0wHYHMpHmSg">
+      <img src="img/azamat.jpg">
+      <h2>Pretty Hate Machine</h2>
+      <p>azamat bagatov</p>
+    </a>
+
+</div>
+
+
+
+
+
+
+<div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+  </label>
+</div>
+
+
+
+
   </ion-content>
 </ion-view>
