@@ -1,1 +1,13 @@
-/* Empty. Add your own CSS if you like */
+.ninetynine{
+font-size: 200px;
+font-family: 'Lobster', cursive;
+}
+
+.euro{
+	font-size: 150px;
+	font-family: 'Lobster', cursive;
+}
+
+#margin{
+	margin-top:80px;
+}
