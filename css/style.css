@@ -1,13 +1,5 @@
-.ninetynine{
-font-size: 200px;
-font-family: 'Lobster', cursive;
+
+.align{
+	text-align: center;
 }
 
-.euro{
-	font-size: 150px;
-	font-family: 'Lobster', cursive;
-}
-
-#margin{
-	margin-top:80px;
-}
