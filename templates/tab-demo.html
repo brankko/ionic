@@ -5,7 +5,7 @@
   <li class="item item-toggle">
      Solar System
      <label class="toggle toggle-assertive">
-       <input type="checkbox">
+       <input type="checkbox" ng-model="solarSystem">
        <div class="track">
          <div class="handle"></div>
        </div>
@@ -13,79 +13,27 @@
   </li>
 
  <div class="item item-body">
-    <img class="full-image" src="img/solar_system_the_planets.jpg">
+    <img ng-show="solarSystem" class="full-image" src="img/solar_system_the_planets.jpg">
     <p>
       A solar system refers to a star and all the objects that travel in orbit around it. Our solar system consists of the sun - our star - eight planets and their natural satellites (such as our moon); dwarf planets; asteroids and comets. Our solar system is located in an outward spiral of the Milky Way galaxy.
     </p>
-    
+  
 
 <div class="list list-inset">
   <label class="item item-input">
     <i class="icon ion-search placeholder-icon"></i>
-    <input type="text" placeholder="Search">
+    <input type="text" placeholder="Search" ng-model="search">
   </label>
 </div>
 
 
-
 <ul class="list">
-
-  <li class="item item-checkbox">
+  <li class="item item-checkbox" ng-repeat="planet in planets | filter:search">
      <label class="checkbox">
        <input type="checkbox">
      </label>
-     Mercury
+     {{planet}}
   </li>
-
- <li class="item item-checkbox">
-     <label class="checkbox">
-       <input type="checkbox">
-     </label>
-     Venus
-  </li>
-
-  <li class="item item-checkbox">
-     <label class="checkbox">
-       <input type="checkbox">
-     </label>
-     Earth
-  </li>
-
-  <li class="item item-checkbox">
-     <label class="checkbox">
-       <input type="checkbox">
-     </label>
-     Mars
-  </li>
-
-  <li class="item item-checkbox">
-     <label class="checkbox">
-       <input type="checkbox">
-     </label>
-     Jupiter
-  </li>
-
-  <li class="item item-checkbox">
-     <label class="checkbox">
-       <input type="checkbox">
-     </label>
-     Saturn
-  </li>
-
-  <li class="item item-checkbox">
-     <label class="checkbox">
-       <input type="checkbox">
-     </label>
-     Uranus
-  </li>
-
-  <li class="item item-checkbox">
-     <label class="checkbox">
-       <input type="checkbox">
-     </label>
-     Neptune
-  </li>
-
 </ul>
 
 <div class="list">
