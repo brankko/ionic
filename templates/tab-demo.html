@@ -1,4 +1,4 @@
-<ion-view view-title="What we can do">
+<ion-view view-title="What we can do" id="backgroundDemo">
   <ion-content>
     <ul class="list">
 
@@ -13,7 +13,15 @@
   </li>
 
  <div class="item item-body">
-    <img ng-show="solarSystem" class="full-image" src="img/solar_system_the_planets.jpg">
+    <img style="opacity:{{slider/100}}" ng-show="solarSystem" class="full-image" src="img/solar_system_the_planets.jpg">
+
+<div class="list">
+  <div ng-show="solarSystem" class="item range range-positive">
+    <i class="icon ion-minus-circled"></i>
+    <input ng-model="slider" type="range" name="volume" min="0" max="100" value="33">
+    <i class="icon ion-plus-circled"></i>
+  </div>
+</div>
     <p>
       A solar system refers to a star and all the objects that travel in orbit around it. Our solar system consists of the sun - our star - eight planets and their natural satellites (such as our moon); dwarf planets; asteroids and comets. Our solar system is located in an outward spiral of the Milky Way galaxy.
     </p>
@@ -35,14 +43,6 @@
      {{planet}}
   </li>
 </ul>
-
-<div class="list">
-  <div class="item range range-positive">
-    <i class="icon ion-minus-circled"></i>
-    <input type="range" name="volume" min="0" max="100" value="33">
-    <i class="icon ion-plus-circled"></i>
-  </div>
-</div>
 
 
 <div class="list">
