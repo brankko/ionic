@@ -14,6 +14,7 @@ angular.module('starter.controllers', [])
 
 
 .controller('DemoCtrl', function($scope, Chats) {
+	$scope.slider = 10;
 	$scope.solarSystem = false;
 	$scope.planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 })

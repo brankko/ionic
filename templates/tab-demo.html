@@ -1,77 +1,79 @@
 <ion-view view-title="What we can do" id="backgroundDemo">
-  <ion-content>
-    <ul class="list">
+<ion-content>
+<ul class="list">
 
   <li class="item item-toggle">
-     Solar System
-     <label class="toggle toggle-assertive">
-       <input type="checkbox" ng-model="solarSystem">
-       <div class="track">
-         <div class="handle"></div>
-       </div>
-     </label>
-  </li>
+   Solar System
+   <label class="toggle toggle-assertive">
+     <input type="checkbox" ng-model="solarSystem">
+     <div class="track">
+       <div class="handle"></div>
+     </div>
+   </label>
+ </li>
 
  <div class="item item-body">
-    <img style="opacity:{{slider/100}}" ng-show="solarSystem" class="full-image" src="img/solar_system_the_planets.jpg">
-
-<div class="list">
-  <div ng-show="solarSystem" class="item range range-positive">
-    <i class="icon ion-minus-circled"></i>
-    <input ng-model="slider" type="range" name="volume" min="0" max="100" value="33">
-    <i class="icon ion-plus-circled"></i>
+ <div id="img_wrapper" ng-show="solarSystem">
+    <img style="transform:scale({{slider/10}});" src="img/solar_system_the_planets.jpg">
   </div>
-</div>
-    <p>
-      A solar system refers to a star and all the objects that travel in orbit around it. Our solar system consists of the sun - our star - eight planets and their natural satellites (such as our moon); dwarf planets; asteroids and comets. Our solar system is located in an outward spiral of the Milky Way galaxy.
-    </p>
+
+  <div class="list">
+    <div ng-show="solarSystem" class="item range range-positive">
+      <i class="icon ion-minus-circled"></i>
+      <input ng-model="slider" type="range" name="volume" min="10" max="20" value="10">
+      <i class="icon ion-plus-circled"></i>
+    </div>
+  </div>
+  <p>
+    A solar system refers to a star and all the objects that travel in orbit around it. Our solar system consists of the sun - our star - eight planets and their natural satellites (such as our moon); dwarf planets; asteroids and comets. Our solar system is located in an outward spiral of the Milky Way galaxy.
+  </p>
   
 
-<div class="list list-inset">
-  <label class="item item-input">
-    <i class="icon ion-search placeholder-icon"></i>
-    <input type="text" placeholder="Search" ng-model="search">
-  </label>
-</div>
+  <div class="list list-inset">
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" placeholder="Search" ng-model="search">
+    </label>
+  </div>
 
 
-<ul class="list">
-  <li class="item item-checkbox" ng-repeat="planet in planets | filter:search">
+  <ul class="list">
+    <li class="item item-checkbox" ng-repeat="planet in planets | filter:search">
      <label class="checkbox">
        <input type="checkbox">
      </label>
      {{planet}}
-  </li>
-</ul>
+   </li>
+ </ul>
 
 
-<div class="list">
+ <div class="list">
 
-    <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=h1AaKBbNGkk">
-      <img src="img/The-Prodigy-Tour-Poster.jpg">
-      <h2>PRODIGY</h2>
-      <p>The day is my enemy</p>
-    </a>
-
-</div>
-
-
-<div class="list">
-
-    <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=YWNWi-ZWL3c">
-     <img src="img/mad max.jpg">
-      <h2>Mad Max: Fury Road</h2>
-      <p>Official Theatrical Teaser Trailer [HD]</p>
-    </a>
+  <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=h1AaKBbNGkk">
+    <img src="img/The-Prodigy-Tour-Poster.jpg">
+    <h2>PRODIGY</h2>
+    <p>The day is my enemy</p>
+  </a>
 
 </div>
 
 
+<div class="list">
+
+  <a class="item item-thumbnail-left" href="https://www.youtube.com/watch?v=YWNWi-ZWL3c">
+   <img src="img/mad max.jpg">
+   <h2>Mad Max: Fury Road</h2>
+   <p>Official Theatrical Teaser Trailer [HD]</p>
+ </a>
+
+</div>
 
 
 
 
 
 
-  </ion-content>
+
+
+</ion-content>
 </ion-view>
