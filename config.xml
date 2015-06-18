@@ -7,5 +7,5 @@
 	<author href="http://www.sae.edu" email="brankko@plagosus.com">
 		SAE Web
 	</author> 
-	<icon src="res/icon.png" width="512" height="512" />
+	<icon src="icon.png" />
 </widget>
